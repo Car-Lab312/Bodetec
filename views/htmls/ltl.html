@@ -1,0 +1,307 @@
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/css/normalize.css">
+
+	<link rel="stylesheet" href="css/all.css">
+
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<script src="js/popper.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="js/bootstrap-material-design.min.js"></script>
+
+	<script>$(document).ready(function() {
+
+		$('body').bootstrapMaterialDesign(); 
+
+		});
+
+	</script>
+
+	<script src="js/main.js"></script>
+
+	<title>Document</title>
+
+</head>
+
+<body>
+
+	<main class="full-box main-container">
+
+
+
+		<nav class="full-box navbar-info">
+
+			<a href="#" class="float-left show-nav-lateral">
+
+				<i class="fas fa-exchange-alt"></i>
+
+			</a>
+
+			<a href="#">
+
+				<i class="fas fa-user-cog"></i>
+
+			</a>
+
+			<a href="#" class="btn-exit-system">
+
+				<i class="fas fa-power-off"></i>
+
+			</a>
+
+		</nav>
+
+
+
+		<section class="full-box nav-lateral">
+
+			<div class="full-box nav-lateral-bg show-nav-lateral"></div>
+
+			<div class="full-box nav-lateral-content">
+
+				<figure class="full-box nav-lateral-avatar">
+
+					<i class="far fa-times-circle show-nav-lateral"></i>
+
+					<img src="logo.png" class="img-fluid" alt="Avatar">
+
+					<figcaption class="roboto-medium text-center">
+
+								...<br><small class="roboto-condensed-light">...</small>
+
+					</figcaption>
+
+				</figure>
+
+				<div class="full-box nav-lateral-bar"></div>
+
+				<nav class="full-box nav-lateral-menu">
+
+					<ul>
+
+						<li>
+
+							<a href="<?php echo SERVERURL; ?>home/"><i class="fab fa-dashcube fa-fw"></i> &nbsp; Dashboard</a>
+
+						</li>
+
+
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class="fas fa-users fa-fw"></i> &nbsp; Trabajador <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>client-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Trabajador</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>client-list/l"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Trabajadores</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>client-search/"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Trabajador</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class='bx bx-notepad' ></i> &nbsp; Entrega de cargo <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>client-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; Entrega a Trabajador</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>client-list/l"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista Entregas de cargo</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class='bx bx-cart' ></i> &nbsp; Productos <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>item-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Productos</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>item-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Productos</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>item-search/"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Producto</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class="fas fa-file-invoice-dollar fa-fw"></i> &nbsp; Stock <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="#"><i class="fas fa-plus fa-fw"></i> &nbsp; Stock</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>reservation-reservation/"><i class="far fa-calendar-alt fa-fw"></i> &nbsp; Stock valorizado</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>reservation-pending/"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; Stock</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>reservation-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Cierre</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>reservation-search.html"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; Stock por fecha</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class='bx bx-notepad' ></i> &nbsp; Proveedores <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo Proveedor</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Proveedores</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-search/"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Proveedor</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li>
+
+							<a href="#" class="nav-btn-submenu"><i class='bx bx-user'></i> &nbsp; Usuarios <i class="fas fa-chevron-down"></i></a>
+
+							<ul>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo usuario</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de usuarios</a>
+
+								</li>
+
+								<li>
+
+									<a href="<?php echo SERVERURL; ?>user-search/"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar usuario</a>
+
+								</li>
+
+							</ul>
+
+						</li>
+
+
+
+								
+
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</section>
+
+
+
+		
+
+
+
+
+
+</body>
+
+</html> -->
