@@ -2,9 +2,9 @@
 // document.getElementById("btn_open").addEventListener("click", open_close_menu);
 // document.getElementById("barra").addEventListener("click", open_close_menu_);
 // document.getElementById("btn_open_perfil").addEventListener("click", open_close_perfil);
-document.getElementById("NuevoUsuario").addEventListener = ("click", Nuevo_Usuario);
+// document.getElementById("NuevoUsuario").addEventListener = ("click", Nuevo_Usuario);
 // document.getElementById("NuevoUsuario").innerText = "Nuevo Usuario"
-document.getElementById("ListarUsuario").innerText = "Listar Usuario"
+// document.getElementById("ListarUsuario").innerText = "Listar Usuario"
 // document.getElementById("BuscarUsuario").innerText = "Buscar Usuario"
 
 //Declaramos variables
@@ -13,7 +13,7 @@ document.getElementById("ListarUsuario").innerText = "Listar Usuario"
 // let btn_open = document.getElementById("btn_open");
 // let btn_open_barra = document.getElementById("barra");
 // let side_menu_perfil = document.getElementById("menu_side_perfil_");
-let Nuevo = document.getElementById("titulo-usuario");
+// let Nuevo = document.getElementById("titulo-usuario");
 
 
 //Evento para mostrar y ocultar menú
@@ -22,9 +22,9 @@ let Nuevo = document.getElementById("titulo-usuario");
         // btn_open.classList.toggle("name_page_final");
         // side_menu.classList.toggle("nav-lateral-content_");
     // }
-    function Nuevo_Usuario(){
-        innerText = "Nuevo Usuario"
-    }
+    // function Nuevo_Usuario(){
+    //     innerText = "Nuevo Usuario"
+    // }
     
     // function open_close_menu_(){
     //     // body.classList.toggle("body_move");

@@ -23,22 +23,39 @@
       <p></p>
       <p></p>
       <table class="table table-striped table-hover">
-        <thead>
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Rut</font></th>
-           <th><font color="black">Nombre</font></th>
-           <th><font color="black">Apellido</font></th>
-           <th><font color="black">Email</font></th>
-           <th><font color="black">Telefono</font></th>
-           <th><font color="black">Cargo</font></th>
-           <th><font color="black">Estado</font></th>
-           <th><font color="black">Tipo de usuario</font></th>
-           <th><font color="black">Trabajador</font></th>
+           <th>Rut</th>
+           <th>Nombre</th>
+           <th>Apellido</th>
+           <th>Email</th>
+           <th>Telefono</th>
+           <th>Cargo</th>
+           <th>Estado</th>
+           <th>Tipo de usuario</th>
+           <th>Trabajador</th>
          </tr>
         </thead>
         <tbody>
         </tbody>
       </table>
+      <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
     <div class="col-12" align="right">
       <button class="w-60 btn btn-lg btn-primary" type="submit" name="actualizar" id="actualizar"><i class='bx bx-revision' style='color:#ffffff'  ></i>&nbsp;&nbsp;Actualizar</button>     
     </div>

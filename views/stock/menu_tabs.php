@@ -14,6 +14,6 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>stock/cierre"><i class="fas fa-clipboard-list fa-fw"></i>Cierre</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/fecha"><i class='bx bxs-calendar' ></i></i>Stock por fecha</a>
+    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/fecha"><i class='bx bxs-calendar'></i>Stock por fecha</a>
   </li>
 </ul>

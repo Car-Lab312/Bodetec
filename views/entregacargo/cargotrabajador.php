@@ -13,20 +13,36 @@
     </div>
     <div class="col-md-9 col-xs-12 border border-opacity-10 p-5">
         <table class="table table-striped table-hover" id="tablaTrabajador">
-            <thead>
+            <thead class="estilo-tabla">
                 <tr>
-                    <th><font color="black">Rut</font></th>
-                    <th><font color="black">Nombre</font></th>
-                    <th><font color="black">Apellido</font></th>
-                    <th><font color="black">Opcion</font></th>
+                    <th>Rut</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Opcion</th>
                 </tr>
             </thead>
             <tbody>
             
             </tbody>
         </table>
+        <nav aria-label="...">
+          <ul class="pagination Tabla-list-bus">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
     </div>
-
 </section>
 <section class="container">
     <form action="<?=base_url?>entregacargo/save" method="POST">

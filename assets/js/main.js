@@ -509,10 +509,6 @@ $(document).ready(function(){
 	
 	/*  Exit system buttom */
 	
-	
-	
-	
-	
 	/*  ------------ Codigo de acciones y movimiento ----------------*/
 	$('.show-nav-lateral').on('click', function(e){
 		e.preventDefault();
@@ -521,7 +517,7 @@ $(document).ready(function(){
 	 if(NavLateral.hasClass('active')){
 		NavLateral.removeClass('active');
 		PageConten.removeClass('active');
-	 }else{
+	}else{
 		NavLateral.addClass('active');
 		PageConten.addClass('active');
 	}

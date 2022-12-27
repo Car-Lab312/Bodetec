@@ -35,25 +35,31 @@
 
 	--accent-color: #253556;
 	/*--accent-color: #455A64;*/
-                --border-color: #D8D8D8;
+                /* --border-color: #D8D8D8; */
 }
 body,html{
 	font-family: 'roboto_condensed_light';
 	width: 100vw;
 	height: 100vh;
-	color: #2d1f83;
 	font-size: 16px;
+	background: #f6f6f6;
 }
 .pantalla-princ{
 	margin-left: 30px;
 	margin-right: 30px;
-	/* margin-top: 100px; */
+	height: 800px;
+	box-shadow: 0px 1px 1px;
 }
 .pantalla-princ-tab{
 	margin-left: 30px;
 	margin-right: 30px;
 }
 
+.barra-notifi{
+	margin-top: 15px;
+	margin-right: 10px;
+	color:#ffffff;
+}
 .barra-notifi i{
 	font-size: 2rem;
 	color:#ffffff;
@@ -108,7 +114,7 @@ body,html{
 .page-nav-tabs li{
 	margin: 5px 20px;
 }
-.page-nav-tabs li a{
+/* .page-nav-tabs li a{
 	color: var(--accent-color);
 	font-size: 17px;
 	min-width: 200px;
@@ -118,7 +124,7 @@ body,html{
 	user-select: none;
 	transition: all .2s ease-in-out;
 	border-bottom: 2px solid transparent;
-}
+} */
 .page-nav-tabs li a.active{
 	color: var(--color-three);
 	cursor: none;
@@ -129,17 +135,17 @@ body,html{
 	cursor: none;
 	pointer-events: none;
 }
-.page-nav-tabs li a:hover{
+/* .page-nav-tabs li a:hover{
 	text-decoration: none;
 	color: #333;
 	border-bottom: 2px solid #333;
-}
+} */
 
-.page-nav-tabs li a i:hover{
+/* .page-nav-tabs li a i:hover{
 	text-decoration: none;
 	color: #333;
 	border-bottom: 2px solid #333;
-}
+} */
 
 /*----------  Edit bootstrap styles  ----------*/
 .form-control[readonly]{
@@ -215,6 +221,20 @@ table form{
 	font-family: 'roboto_condensed_regular';
 }
 
+/* ----   CSS tabla  --- */
+
+.Tabla-list-bus{
+	justify-content: center;
+}
+.estilo-tabla{
+	background-color: #2d1f83;
+}
+.tabla{
+	background-color: white;
+}
+
+/* ---- Fin CSS tabla  --- */
+
 /*----------  Page 404 styles  ----------*/
 .container-404{
 	background: #2d1f83;
@@ -248,7 +268,7 @@ table form{
 	height: 600px;
 	width: 350px;
 	font-size: 17px;
-	color: #2d1f83;
+	/* color: #2d1f83; */
 	/* background-color: #2d1f83;; */
 }
 .Menu-tab{
@@ -301,7 +321,7 @@ table form{
 }
 /*  Nav Lateral */
 .nav-lateral{
-	width: 300px;
+	width: 240px;
 	height: 100%;
 	margin-bottom: 100%;
 	position: absolute;
@@ -312,25 +332,30 @@ table form{
 	background-position: center center;
 	background-size: cover;
 }
+.border-end{
+	box-shadow: 0px 5px 5px;
+	border: 6px;
+}
 
 /* --- CSS ANCHO BARRA LATERAL  --- */
 .nav-lateral-bg{ display: none; }
 .nav-lateral-content{
 	max-width: 240px;
 	height: 100%;
-	background: #1783db;
+	background: #2d1f83;
 }
 .nav-lateral-cerrado{
 	right: -190px;
 	height: 100%;
 }
 .nav-lateral-content span {
-	background: #1783db;
+	background: #2d1f83;
 	border: none;
+	/* border: 3px solid white; */
 }
 
 .name_page_expandir{
-	background: #2d1f83;;
+	background: #2d1f83;
 }
 .name_page_expandir i{
     font-size: 40px;
@@ -343,7 +368,7 @@ table form{
 	cursor: pointer;
 }
 
-/* --- FIN BARRA LATERAL ---*/
+/* --- FIN ANCHO BARRA LATERAL ---*/
 
 .escan-prod{
 	margin-top: 250px;
@@ -403,7 +428,7 @@ table form{
 .nav-lateral-menu ul li i{
 	margin-right: -10px;
 }
-
+/*---------- Fin estilo barra lateral --------*/
 .titulo{
 	margin-top: 10px;
 	margin-left: 20px;
@@ -417,7 +442,6 @@ table form{
 	font-size: 17px;
 	box-sizing: border-box;
 	padding-left: -1px;
-	/* transition: all .2s ease-in-out; */
 }
 
 .nav-lateral-menu ul li span:hover{
@@ -426,8 +450,9 @@ table form{
 }
 
 .nav-lateral-menu ul li span{
-	margin-left: -8px;
-	margin-right: -20px;
+	margin-left: 3px;
+	margin-right: -15px;
+	right: 0px;
 }
 
 .show-nav-lateral-submenu{
@@ -444,10 +469,13 @@ table form{
 /* .Page content */
 .navbar-info{
 	height: 80px;
-	border-bottom: 1px solid var(--border-color);
 	text-align: right;
 	padding-right: 20px;
 	z-index: 2;
+	height: 85; 
+	background-color: #2d1f83;
+	box-shadow: 0px 1px 1px;
+	/* border: 1px solid white; */
 }
 
 .navbar-info a{
@@ -462,10 +490,6 @@ table form{
 	position: relative;
 	z-index: 2;
 }
-/* .navbar-info a:hover{
-	color: var(--color-three);
-	background-image: radial-gradient(circle,rgba(250, 30, 78, .1), transparent 80%);
-} */
 .navbar-info a:active,
 .navbar-info a:focus{
 	outline: none;
@@ -497,7 +521,7 @@ table form{
 .tile:active{
 	outline: none;
 }
-.tile-tittle{
+/* .tile-tittle{
 	margin: 0;
 	width: 100%;
 	padding: 0;
@@ -508,7 +532,7 @@ table form{
 	border-bottom: 1px solid var(--border-color);
 	transition: all .2s ease-in-out;
 	font-family: 'roboto_medium_regular';
-}
+} */
 .tile:hover .tile-tittle{
 	color: #FFF;
 	border-color: var(--color-three);
@@ -662,13 +686,14 @@ table form{
 }
 /* ------ Fin estilo menu principal */
 
+/*  -------- Estilo Formularios y formulario perfil ---------- */
 .form-register{
 	padding: 20px;
 	margin-left: 35px;
 	margin-right: 35px;
 	margin-top: 95px;
-	border: 1px solid #C8C2BC;
-	background: #FFF8D9;
+	background: white;
+	box-shadow: 0px 1px 1px;
 }
 
 .form-register-user-perfil{
@@ -677,22 +702,17 @@ table form{
 	margin-left: 35px;
 	margin-right: 35px;
 	margin-top: 95px;
-	border: 1px solid #C8C2BC;
-	background: #FFF8D9;
+	background: white;
+	box-shadow: 0px 1px 1px;
 }
 .form-register-user-perfil div i{
 	margin-right: 8px;
-	color: white;
 }
 .form-register-user-perfil button{
 	width: 200px;
 }
-.search{
-	background: #4C5F7A;
-	width: 100%;
-	padding: 1em 1em 0;
-	padding-bottom:2px;
-}
+
+/*  ----- Fin estilo fomulario y formulario perfil ------- */
 .family{
 	height:500px;
 	overflow-y:scroll;

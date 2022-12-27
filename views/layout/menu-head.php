@@ -1,4 +1,4 @@
-<nav class="full-box navbar-info shadow-lg pt-3 mb-5" style="height: 85; background-color: #2d1f83;">
+<nav class="full-box navbar-info border-bottom">
 	<div class="btn-group barra-notifi">
 		<div class="roboto-medium text-center" style="color:#ffffff">
         	<p><?=$_SESSION['identity']->nombreUser?>&nbsp; 
@@ -11,8 +11,19 @@
 		</a>
 		<i class='bx bx-dots-vertical-rounded'></i>
 		<a href="#">
+			<i class='bx bx-bell' title="Notificaciones"></i>
+		</a>
+		<!-- <li class="nav-item dropdown">
+		<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
 			<i class='bx bx-bell' title="Mi perfil"></i>
 		</a>
+	       <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#">Third</a></li>
+             <li><a class="dropdown-item" href="#">Fourth</a></li>
+             <li><hr class="dropdown-divider"></li>
+             <li><a class="dropdown-item" href="#">Ver notificaciones</a></li>
+           </ul> 
+		</li> -->
 	</div>
-	<script src="assets/js/script.js"></script>
+	<!-- <script src="assets/js/script.js"></script> -->
 </nav>

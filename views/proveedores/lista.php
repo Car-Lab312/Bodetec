@@ -4,15 +4,15 @@
 <section class="pantalla-princ form-register">
     <form action="" class="container-fluid row">
       <table class="table table-striped table-hover mt-5">
-        <thead>
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Rut</font></th>
-           <th><font color="black">Nombre</font></th>
-           <th><font color="black">Direccion</font></th>
-           <th><font color="black">ciudad</font></th>
-           <th><font color="black">Email</font></th>
-           <th><font color="black">Telefono</font></th>
-           <th colspan="2"><font color="black" class="text-center">Opciones</font></th>
+           <th>Rut</th>
+           <th>Nombre</th>
+           <th>Direccion</th>
+           <th>ciudad</th>
+           <th>Email</th>
+           <th>Telefono</th>
+           <th colspan="2" class="text-center">Opciones</th>
          </tr>
         </thead>
         <tbody>
@@ -30,6 +30,23 @@
           <?php endwhile; ?>
         </tbody>
       </table>
+      <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
             <!-- Modal consulta-->
         <div class="modal fade" id="My_Delete" tabindex="-1" aria-hidden="true" aria-labelledby="My_Delete">
             <!-- Caja de dialogo -->

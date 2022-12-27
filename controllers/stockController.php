@@ -13,7 +13,7 @@ require_once 'models/productoModel.php';
 			require_once 'views/stock/menu_tabs.php';
 		}
 		public function fecha(){
-			require_once 'views/stock/fecha.php';
+			// require_once 'views/stock/fecha.php';
 			require_once 'views/stock/menu_tabs.php';
 		}
 		public function valor(){

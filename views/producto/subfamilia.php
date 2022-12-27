@@ -24,7 +24,7 @@
           <?php endwhile;?>
         </select>
       </div>
-      <div class="input-group mb-3">
+      <div class="mb-3">
         <button class="w-60 btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#mi-question" name="add" id="add"><i class='bx bx-save me-2'></i>Ingresar</button>
       </div>
     </div>

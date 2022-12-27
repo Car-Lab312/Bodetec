@@ -8,13 +8,12 @@
 <section class="pantalla-princ form-register">
 		<form action="<?=base_url?>stock/update" method="POST" class="container-fluid mb-3 row">
 			<div class="col-lg-4 col-md-6 col-xs-12">
-				<div class="input-group form-floating mb-3">
+				<div class="mb-3">
           <button class="btn btn-warning" data-bs-toggle="modal" type="button" data-bs-target="#modalProductosIn" name="addStock" id="addStock"><i class='bx bx-barcode me-2' ></i>Ingresar codigo</button>
         </div>
 			</div>
-      <div class="col-lg-4 col-md-6 col-xs-12"></div>
       <div class="col-lg-4 col-md-6 col-xs-12">
-        <div class="form-floating mb-3">
+        <div class="mb-3">
           <button class="btn btn-warning" data-bs-toggle="modal" type="button" data-bs-target="#modalSelectIn" name="addStock" id="addStock"><i class='bx bx-barcode me-2' ></i>Seleccionar producto</button>
           
         </div>
@@ -29,20 +28,36 @@
 			<hr>
 			<p></p>
 			<table class="table table-striped table-hover border" id="tablaStockIngreso">
-        <thead>
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Codigo Producto</font></th>
-           <th><font color="black">Nombre producto</font></th>
-           <th><font color="black">Cantidad ingresada</font></th>
-           <th><font color="black">Precio Unitario</font></th>
-           <th><font color="black">Precio Unitario</font></th>
+           <th>Codigo Producto</th>
+           <th>Nombre producto</th>
+           <th>Cantidad ingresada</th>
+           <th>Precio Unitario</th>
+           <th>Precio Unitario</th>
          </tr>
         </thead>
         <tbody>
           
         </tbody>
       </table>
-
+      <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
 			<div class="col-12 mt-3" align="right">
 				<button class="w-60 btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#mi-question" name="add" id="add"><i class='bx bx-revision' style='color:#ffffff'  ></i>&nbsp;&nbsp;Guardar</button>
 			</div>
@@ -68,7 +83,7 @@
       </div>
 		</form>
 
-    <!----------------------------------------------------- Modal      SCANER ----------------------------------------------->
+    <!----------------------------------------------------- Modal  SCANER ----------------------------------------------->
       <div class="modal fade" id="modalProductosIn" tabindex="-1" role="dialog" aria-labelledby="modalArticulosLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -81,7 +96,7 @@
                 <div class="form-group">
                   <label>Escanear Código de Barras</label>
                   <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1"><box-icon name='barcode-reader'></box-icon></span>
+                    <span class="input-group-text" id="basic-addon1"><i class='bx bx-barcode-reader'></i></span>
                     <input type="text" class="form-control" name="codigoEscanStock" id="codigoEscaneoStock" autocomplete="off">
                   </div>
                 </div>
@@ -120,7 +135,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Escaner de codigo</h5>
+              <h5 class="modal-title">Seleccione producto</h5>
               <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
             </div>
             <div class="modal-body">

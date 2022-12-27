@@ -4,14 +4,14 @@
 <section class="pantalla-princ form-register">
     <form action="" class="container-fluid row">
       <table class="table table-striped table-hover">
-        <thead>
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Codigo</font></th>
-           <th><font color="black">Nombre</font></th>
-           <th><font color="black">Descripcion</font></th>
-           <th><font color="black">Familia</font></th>
-           <th><font color="black">Valor</font></th>
-           <th><font color="black">Opciones</font></th>
+           <th>Codigo</th>
+           <th>Nombre</th>
+           <th>Descripcion</th>
+           <th>Familia</th>
+           <th>Valor</th>
+           <th>Opciones</th>
          </tr>
         </thead>
         <tbody>
@@ -41,5 +41,22 @@
           </tr>
         </tbody>
       </table>
+      <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
     </form>
   </section>

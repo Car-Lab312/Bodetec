@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <div class="col-lg-4 col-md-6 col-xs-12">
           <div class="input-group input-group-lg" style="width: 350px;">
-            <span class="input-group-text" id="inputGroup-sizing-lg"><box-icon name='barcode-reader'></box-icon></span>
+            <span class="input-group-text" id="inputGroup-sizing-lg"><i class='bx bx-barcode-reader'></i></span>
             <input type="text" class="form-control" name="codigo_in" id="validationcodigo" placeholder="Codigo producto" aria-describedby="validationServer03Feedback" required value="<?=isset($producto) && is_object($producto) ? $producto->cod_producto : ''?>"> 
             <div id="validationServer03Feedback" class="invalid-feedback">
               * Ingreso obligatorio
@@ -59,14 +59,14 @@
       <hr>
       <p></p>
       <table class="table table-striped table-hover">
-        <thead>
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Codigo</font></th>
-           <th><font color="black">Nombre</font></th>
-           <th><font color="black">Familia</font></th>
-           <th><font color="black">Stock</font></th>
-           <th><font color="black">Valor</font></th>
-           <th><font color="black">Total</font></th>
+           <th>Codigo</th>
+           <th>Nombre</th>
+           <th>Familia</th>
+           <th>Stock</th>
+           <th>Valor</th>
+           <th>Total</th>
          </tr>
         </thead>
         <tbody>
@@ -89,6 +89,23 @@
           </tr>
         </tbody>
       </table>
+      <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
       <div class="col-12 mt-3" align="right">
         <button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-revision' style='color:#ffffff'  ></i>&nbsp;&nbsp;Actualizar</button>
       </div>

@@ -14,17 +14,17 @@
 	    </div>
 	    <p></p>
 			<p></p>
-			<table class="table table-striped table-hover" id="tablaTrabajador">
-        <thead>
+			<table class="table table-striped table-hover tabla" id="tablaTrabajador">
+        <thead class="estilo-tabla">
          <tr>
-           <th><font color="black">Rut</font></th>
-           <th><font color="black">Nombre</font></th>
-           <th><font color="black">Apellido</font></th>
-           <th><font color="black">Direccion</font></th>
-           <th><font color="black">Ciudad</font></th>
-           <th><font color="black">Teléfono</font></th>
-           <th><font color="black">Cargo</font></th>
-           <th><font color="black">Opcion</font></th>
+           <th>Rut</th>
+           <th>Nombre</th>
+           <th>Apellido</th>
+           <th>Direccion</th>
+           <th>Ciudad</th>
+           <th>Teléfono</th>
+           <th>Cargo</th>
+           <th>Opcion</th>
          </tr>
         </thead>
         <tbody>
@@ -32,6 +32,22 @@
         </tbody>
       </table>
           <div class="col-12" align="right">
-        
     </div>
+    <nav aria-label="...">
+      <ul class="pagination Tabla-list-bus">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a></li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
 	</section>
