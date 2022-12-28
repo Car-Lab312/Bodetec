@@ -42,13 +42,13 @@ body,html{
 	width: 100vw;
 	height: 100vh;
 	font-size: 16px;
-	background: #f6f6f6;
+	/* background: #f6f6f6; */
 }
 .pantalla-princ{
 	margin-left: 30px;
 	margin-right: 30px;
-	height: 800px;
-	box-shadow: 0px 1px 1px;
+	height: 720px;
+	box-shadow: 1px 1px 1px 1px;
 }
 .pantalla-princ-tab{
 	margin-left: 30px;
@@ -62,7 +62,7 @@ body,html{
 }
 .barra-notifi i{
 	font-size: 2rem;
-	color:#ffffff;
+	color:#2d1f83;
 }
 
 .nav-item .nav-link:hover{
@@ -259,6 +259,18 @@ table form{
 	color: white;
 	background-color: #2d1f83;;
 }
+.Titulos-pedidos{
+	border-radius: 20px;
+	text-align: center;
+	left: 700px;
+	position: relative;
+	top: 25px;
+	height: 60px;
+	width: 350px;
+	font-size: 30px;
+	color: white;
+	background-color: #2d1f83;;
+}
 .Registro-usu-perfil{
 	border-radius: 20px;
 	margin-right: 50px;
@@ -331,6 +343,9 @@ table form{
 	transition: all .4s ease-in-out;
 	background-position: center center;
 	background-size: cover;
+}
+.activado{
+	background-color: chartreuse;
 }
 .border-end{
 	box-shadow: 0px 5px 5px;
@@ -473,7 +488,8 @@ table form{
 	padding-right: 20px;
 	z-index: 2;
 	height: 85; 
-	background-color: #2d1f83;
+	/* background-color: #2d1f83; */
+	background-color: #f6f6f6;
 	box-shadow: 0px 1px 1px;
 	/* border: 1px solid white; */
 }
@@ -692,7 +708,7 @@ table form{
 	margin-left: 35px;
 	margin-right: 35px;
 	margin-top: 95px;
-	background: white;
+	background: #f6f6f6;
 	box-shadow: 0px 1px 1px;
 }
 
@@ -702,7 +718,7 @@ table form{
 	margin-left: 35px;
 	margin-right: 35px;
 	margin-top: 95px;
-	background: white;
+	background: #f6f6f6;
 	box-shadow: 0px 1px 1px;
 }
 .form-register-user-perfil div i{

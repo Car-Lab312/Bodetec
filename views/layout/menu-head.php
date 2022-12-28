@@ -1,6 +1,6 @@
 <nav class="full-box navbar-info border-bottom">
 	<div class="btn-group barra-notifi">
-		<div class="roboto-medium text-center" style="color:#ffffff">
+		<div class="roboto-medium text-center" style="color:#2d1f83;">
         	<p><?=$_SESSION['identity']->nombreUser?>&nbsp; 
             <?=$_SESSION['identity']->apellido?></p>
             <small class="roboto-condensed-light"><?=$_SESSION['identity']->cargo?></small>

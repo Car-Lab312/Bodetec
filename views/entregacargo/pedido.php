@@ -4,8 +4,8 @@
 			$pedido = $pedidos->fetch_object();
 			$lista = Utils::get_ListaPedido($pedido->id_pedimento);
  ?>
-<div align="center">
-	<font size="10">Pedido # <?=$pedido->id_pedimento?></font>
+<div class="Titulos-pedidos">
+	Pedido # <?=$pedido->id_pedimento?>
 </div>
 <div class="container pt-3 ">
 	<div class="row pb-3">
@@ -16,7 +16,7 @@
 	<div class="row">
 	<div class="col-8 border border-secondary p-3">
 		<table class="table table-bordered">
-			<tbody>
+			<tbody >
 				<tr>
 				    <td width="200">Rut</td>
 				    <td><?=$pedido->rut;?></td>
@@ -43,10 +43,10 @@
 	<div class="row">
 		<div class="col-12 border border-secondary p-3">
 			<table class="table table-bordered">
-				<thead >
-					<tr class="table-light">
-						<th width="800"><font color="black">Producto</font></th>
-					    <th><font color="black">Cantidad</font></th>
+				<thead class="estilo-tabla">
+					<tr>
+						<th width="800">Producto</th>
+					    <th>Cantidad</th>
 					</tr>
 				</thead>
 				<tbody>

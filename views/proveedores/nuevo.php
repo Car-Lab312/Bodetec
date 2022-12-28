@@ -3,7 +3,6 @@
 <div class="Titulos">
     <p class="text-center" id="titulo-usuario">Nuevos Proveedores</p>
 </div>
-  <section class='pantalla-princ '>
     <div class="container-fluid d-flex justify-content-center">
     <?php if(isset($proveedor) && is_object($proveedor)): ?>
         <?php $titulo= " Editar Proveedor : ".$proveedor->nombre; 
@@ -21,8 +20,8 @@
         <div class="container-fluid d-flex justify-content-center alert alert-danger" role="alert">Registro fallido, ingresa los datos correctamente</div>
     <?php endif; ?>
     <?php  Utils::deleteSession('register'); ?>
-  <section class="form-register" id="registro_proveedores">
-    <div class="col-12 d-flex justify-content-center"><h1><?=$titulo?> </h1></div>
+  <section class="pantalla-princ form-register" id="registro_proveedores">
+    <!-- <div class="col-12 d-flex justify-content-center"><h1><?=$titulo?> </h1></div> -->
     <div class="container-fluid d-flex justify-content-center">
 
       <form method="POST" action="<?=$url_action?>" class="container-fluid row pt-5">

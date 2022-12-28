@@ -51,13 +51,11 @@
           <label for="nombre">Familia</label>
         </div>
       </div>
-      <p></p>
       <div class="col-12 mt-3" align="right">
         <button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i>&nbsp;&nbsp;Guardar</button>
       </div>
       <p></p>
       <hr>
-      <p></p>
       <table class="table table-striped table-hover">
         <thead class="estilo-tabla">
          <tr>
@@ -106,8 +104,8 @@
         </li>
       </ul>
     </nav>
-      <div class="col-12 mt-3" align="right">
-        <button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-revision' style='color:#ffffff'  ></i>&nbsp;&nbsp;Actualizar</button>
+      <div class="col-12" align="right">
+        <button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-revision' style='color:#ffffff'  ></i>Actualizar</button>
       </div>
     </form>
   </section>

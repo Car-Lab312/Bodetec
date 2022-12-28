@@ -486,26 +486,6 @@ $(document).ready(function(){
 			});
 		}
 	});
-	/*	$('#codigo_busca').on('change',function(){
-		if($(this).val() !=''){
-			$('#codProStock').attr($(this).val());
-			id = $(this).val();
-			$.ajax({
-				type : 'POST',
-				url  : 'helpers/utils.php',
-				data: {codProd_search:id},
-				cache:false,
-				contenType: 'json',
-				success:function(response){
-					valor = reenplaza(response),
-					  $('#codProStock').attr(valor);	
-				},
-				error:function(){
-					alert('Error');
-				}
-			});
-		}
-	})*/
 	
 	/*  Exit system buttom */
 	
@@ -522,19 +502,19 @@ $(document).ready(function(){
 		PageConten.addClass('active');
 	}
 	});
-	// $('.show-nav-lateral').on('click', function(e){
+
+	// $('.boton-active').on('click', function(e){
 	// 	e.preventDefault();
-	// 	var NavLateral=$('.nav-lateral');
-	// 	var PageConten=$('.page-content');
-	//  if(NavLateral.hasClass('active')){
-	// 	NavLateral.removeClass('active');
-	// 	PageConten.removeClass('active');
-	//  }else{
-	// 	NavLateral.addClass('active');
-	// 	PageConten.addClass('active');
+	// 	var SpanActivado=$('.activado');
+	// 	// var PageConten=$('.page-content');
+	//  if(SpanActivado.hasClass('active')){
+	// 	SpanActivado.removeClass('active');
+	// 	// PageConten.removeClass('active');
+	// }else{
+	// 	SpanActivado.addClass('active');
+	// 	// PageConten.addClass('active');
 	// }
 	// });
-	
 	
 	(function($){
 		$(window).on("load",function(){
