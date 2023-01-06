@@ -14,3 +14,4 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>trabajador/nuevocargo"><i class='bx bx-wrench'></i>Ingresar nuevos cargos</a>
   </li>
 </ul>
+<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

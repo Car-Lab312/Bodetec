@@ -34,6 +34,6 @@
         		<input type="checkbox" value="remember-me" > <font COLOR="blue">Mostrar contraseña</font>
       		</label>
     	</div>
-    	<button class="w-100 btn btn-lg btn-primary" type="submit"><i class='bx bxs-lock-open-alt' ></i>Ingresar</button>
+    	<button class="boton w-100 btn btn-lg btn-primary" type="submit"><i class='bx bxs-lock-open-alt' ></i>Ingresar</button>
   	</form>
 </div>

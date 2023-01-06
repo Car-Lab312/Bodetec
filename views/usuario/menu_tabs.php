@@ -12,4 +12,5 @@
   </li>
 </ul>
 
+<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">
     

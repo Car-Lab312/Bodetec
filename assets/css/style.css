@@ -54,6 +54,12 @@ body,html{
 	margin-left: 30px;
 	margin-right: 30px;
 }
+.fondo-menu-tabs{
+	width: 30vw;
+	height: 30vh;
+	margin-left: 600px;
+	margin-top: 300px;
+}
 
 .barra-notifi{
 	margin-top: 15px;

@@ -8,3 +8,4 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>entregacargo/listadecargo"><i class="fas fa-clipboard-list fa-fw"></i>Lista entregas de cargo</a>
   </li>
 </ul>
+<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

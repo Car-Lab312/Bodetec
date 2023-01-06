@@ -17,3 +17,4 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>producto/subfamilia"><i class="fa fa-cogs" aria-hidden="true"></i>Sub Familia</a>
   </li>
 </ul>
+<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">
