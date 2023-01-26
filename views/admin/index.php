@@ -1,6 +1,7 @@
-<h1 class="text-center">Menú principal</h1>
-<div class="container text-center tamaño">
-<hr>
+<link href="<?=base_url?>assets/css/style.css" rel="stylesheet">
+<h1 class="text-center MPrincipal">Menú principal</h1>
+<!-- <img class="fondo_app" src="<?=base_url?>assets/images/fondo-login.jpg"> -->
+<div class="container text-center Acceso_directos">
 	<div class="row g-2">
 		<div class="col-6">
 			<div class="box jobs ">

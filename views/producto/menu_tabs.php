@@ -11,10 +11,10 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>producto/buscar"><i class="fas fa-search fa-fw"></i>Buscar Productos</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>producto/familia"><i class="fa fa-cog" aria-hidden="true"></i>Familia</a>
+    <a class="nav-link" aria-current="page" href="<?=base_url?>producto/familia"><i class="fa fa-cog"></i>Familia</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>producto/subfamilia"><i class="fa fa-cogs" aria-hidden="true"></i>Sub Familia</a>
+    <a class="nav-link" aria-current="page" href="<?=base_url?>producto/subfamilia"><i class="fa fa-cogs" ></i>Sub Familia</a>
   </li>
 </ul>
 <img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

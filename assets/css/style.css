@@ -42,8 +42,22 @@ body,html{
 	width: 100vw;
 	height: 100vh;
 	font-size: 16px;
-	/* background: #f6f6f6; */
+	/* background-image: url(../images/fondo-login.jpg); */
+	/* background-repeat: no-repeat; */
+	/* background: #14111A; */
 }
+
+body{
+	font-family: 'roboto_condensed_light';
+	width: 100vw;
+	height: 100vh;
+	font-size: 16px;
+	background-image: url(../images/fondo-login.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/* background: #14111A; */
+}
+
 .pantalla-princ{
 	margin-left: 30px;
 	margin-right: 30px;
@@ -53,12 +67,33 @@ body,html{
 .pantalla-princ-tab{
 	margin-left: 30px;
 	margin-right: 30px;
+	margin-top: -9px;
+	color: white;
+	background-color: #2d1f83;
 }
+
 .fondo-menu-tabs{
 	width: 30vw;
 	height: 30vh;
 	margin-left: 600px;
 	margin-top: 300px;
+}
+
+.fondo_app{
+	font-family: 'roboto_condensed_light';
+	width: 100vw;
+	height: 100vh;
+	/* color: #2d1f83; */
+	font-size: 16px;
+	margin-top: -767px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.4;
+	position: fixed;
+}
+
+.Acceso_directos{
+	margin-top: 250px;
 }
 
 .barra-notifi{
@@ -72,7 +107,11 @@ body,html{
 }
 
 .nav-item .nav-link:hover{
-	color: red; 
+	color: yellow; 
+}
+
+.nav-item a{
+	color: white; 
 }
 
 .full-box{
@@ -263,7 +302,19 @@ table form{
 	width: 350px;
 	font-size: 30px;
 	color: white;
-	background-color: #2d1f83;;
+	background-color: #2d1f83;
+}
+.MPrincipal{
+	border-radius: 20px;
+	margin-left: 750px;
+	bottom: 0;
+	top: 95px;
+	position: fixed;
+	height: 60px;
+	width: 350px;
+	font-size: 30px;
+	color: white;
+	background-color: #2d1f83;
 }
 .Titulos-pedidos{
 	border-radius: 20px;
@@ -674,7 +725,7 @@ table form{
 }
 .box:hover{
 	border-radius: 60px;
-	box-shadow: 0px 50px 70px;
+	/* box-shadow: 0px 50px 70px; */
 	transform: translate(0px);
 	transition: all .2s ease-out;
 }

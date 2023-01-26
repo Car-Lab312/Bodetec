@@ -103,34 +103,6 @@
 			<hr>
 			</form>
 			<?php if(!isset($producto)):?>
-			<form action="<?=$url_action?>" method="POST" class="container-fluid row">
-			<div class="col-12 mt-3" align="right">
-				<h1 class="text-center">Tabla producto</h1>
-				<!--<button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i>&nbsp;&nbsp;Actualizar</button>-->
-			</div>
-			<p></p>
-			
-		<table class="table table-striped table-hover" style="width: 900px;" align="center">
-        <thead>
-         <tr>
-           <th><font color="black">Codigo</font></th>
-           <th><font color="black">Nombre producto</font></th>
-           <th><font color="black">Familia</font></th>
-           <th><font color="black">Valor</font></th>
-         </tr>
-        </thead>
-        <tbody>
-
-        <?php while($producto = $prod->fetch_object()): ?>
-          <tr>
-            <th scope="row"><?=$producto->cod_producto;?></th>
-            <td><?=$producto->nombre;?></td>
-            <td><?=$producto->descripcion;?></td>
-            <td><?=$producto->valor;?></td>
-          </tr>
-        <?php endwhile; ?>
-        </tbody>
-      </table>
       <?php endif; ?>	
 		</form>
 	</section>
