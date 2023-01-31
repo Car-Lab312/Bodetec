@@ -43,8 +43,6 @@
           </ul>
         </nav>
     </div>
-</section>
-<section class="container">
     <form action="<?=base_url?>entregacargo/save" method="POST">
         <div class="col-12 mt-3 p-3 border d-flex row">
             <div class="col-3">
