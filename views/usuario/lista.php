@@ -35,21 +35,12 @@
             <td><?=$user->nombre;?></td>
             <td><?=$user->apellido;?></td>
             <td><?=$user->direccion;?></td>
-            <td><?=$user->fono;?></td>
+            <td></td>
             <td><?=$user->email;?></td>
-            <?php if($user->estado==1): ?>
-              <td>Habilitado</td>
-            <?php else: ?>
-              <td>Deshabilitado</td>
-            <?php endif; ?>
-            <td><?=$user->tipo;?></td>
-            <?php if($user->is_job==0): ?>
-              <td>Externo</td>
-            <?php else: ?>
+            <td><?=$user->fono;?></td>
               <td>Trabajador</td>
-            <?php endif; ?>
               <td><a href="<?=base_url?>usuario/editar&id=<?=$user->id_user?>" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
-              <td><a href="<?=base_url?>usuario/delete&id=<?=$user->id_user?>" class="btn btn-xss btn-danger"><i class='bx bx-minus-circle'></i></a></td>
+              <td><a data-bs-toggle="modal" data-bs-target="#Eliminar" class="btn btn-xss btn-danger"><i class='bx bx-minus-circle'></i></a></td>
           </tr>
         <?php endwhile; ?>
         </tbody>
@@ -71,27 +62,19 @@
         </li>
       </ul>
     </nav>
-      <!-- Modal consulta-->
-        <div class="modal fade" id="mi-question" tabindex="-1" aria-hidden="true" aria-labelledby="mi-question">
-            <!-- Caja de dialogo -->
-            <div class="modal-dialog">
-            <!-- Contenido -->  
-              <div class="modal-content">
-                <div class="modal-header bg-warning">
-                  <h5 class="modal-title">Confirmacion</h5>
-                  <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
-                </div>
-                <div class="modal-body">
-                  <h4 class="pt-3 pb-3">La informacion se Guardará en la base de datos</h4>
-                </div>
-                <div class="modal-footer bg-warning">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                  <input type="submit" class="btn btn-primary" value="Aceptar">
-                  
-                </div>
-              </div>
-            </div>
+    <!-- Modal consulta-->
+    <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <i class="text-center bi bi-question-circle text-danger"></i>
+          <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Seguro que desea eliminar el usuario?</label> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+            <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+          </div>
         </div>
+      </div>
+</div>
       <!-- Fin modal consulta -->
 	</form>
 </section>
