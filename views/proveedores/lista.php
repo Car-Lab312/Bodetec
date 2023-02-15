@@ -2,8 +2,17 @@
     <p class="text-center" id="titulo-usuario">Listar Proveedores</p>
 </div>
 <section class="pantalla-princ form-register">
-    <form action="" class="container-fluid row">
-      <table class="table table-striped table-hover mt-5">
+<div class="search">
+      <div class="col-md-6 col-xs-12 row">
+        <div class="col-auto">
+          <input type="text" class="form-control" id="rut_prov" name="rut_prov" placeholder="Rut, Nombre o Email" required>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary mb-3"><i class='bx bx-search-alt-2'></i> Buscar</button>
+        </div>
+        </div>
+      </div>
+      <table class="table table-striped table-hover pt-5 tabla rounded-top">
         <thead class="estilo-tabla">
          <tr>
            <th>Rut</th>
@@ -25,7 +34,7 @@
               <td><?=$prov->email;?></td>
               <td><?=$prov->telefono;?></td>
               <td><a href="<?=base_url?>proveedores/editar&id=<?=$prov->id?>" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
-              <td><a data-id="<?=$prov->id?>" class="btn btn-xss btn-danger del" id="question" data-bs-toggle="modal" data-bs-target="#My_Delete"><i class='bx bx-minus-circle'></i></a></td>
+              <td><a data-id="<?=$prov->id?>" class="btn btn-xss btn-danger del" id="question" data-bs-toggle="modal" data-bs-target="#Eliminar"><i class='bx bx-minus-circle'></i></a></td>
             </tr>
           <?php endwhile; ?>
         </tbody>
@@ -48,25 +57,16 @@
       </ul>
     </nav>
             <!-- Modal consulta-->
-        <div class="modal fade" id="My_Delete" tabindex="-1" aria-hidden="true" aria-labelledby="My_Delete">
-            <!-- Caja de dialogo -->
-            <div class="modal-dialog">
-            <!-- Contenido -->  
-              <div class="modal-content">
-                <div class="modal-header bg-warning">
-                  <h5 class="modal-title">Confirmacion</h5>
-                  <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
-                </div>
-                <div class="modal-body">
-                  <h4 class="pt-3 pb-3">La informacion se Eliminara  ¿Esta seguro? </h4>
-                </div>
-                <div class="modal-footer bg-warning">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                  <a class="btn btn-primary" id="acepta">Aceptar</a>     
-                </div>
-              </div>
-            </div>
-        </div>
-      <!-- Fin modal consulta -->
-    </form>
+  <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <i class="text-center bi bi-question-circle text-danger"></i>
+      <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Seguro que desea eliminar el proveedor?</label> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>

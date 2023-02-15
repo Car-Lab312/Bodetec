@@ -7,8 +7,7 @@
 			      $buttonAction = 'Actualizar';?>
 		<?php else: ?>
 			<?php $titulo='AGREGAR PRODUCTO';
-			      $url_action = base_url."producto/save";
-			      $buttonAction = 'Guardar'; ?>
+			      $url_action = base_url."producto/save";?>
 		<?php endif; ?>
 <div class="Titulos">
     <p class="text-center" id="titulo-usuario">Agregar Productos</p>
@@ -97,10 +96,8 @@
 			<p></p>
 			<div class="col-12 mt-3">
 				<!-- <button class="w-60 btn btn-lg btn-primary" type="submit" name="consultar" id="consultar">Consultar</button> -->
-				<button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i>&nbsp;&nbsp;<?=$buttonAction?></button>
+				<button class="w-90 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i> Guardar</button>
 			</div>
-			<p></p>
-			<hr>
 			</form>
 			<?php if(!isset($producto)):?>
       <?php endif; ?>	

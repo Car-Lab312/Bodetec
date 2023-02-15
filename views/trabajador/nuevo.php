@@ -7,13 +7,12 @@
 				$ciudades = Utils::get_ciudades();
 		  }else{ 
 				$url_action = base_url."trabajador/save";
-				$titulo = 'NUEVO TRABAJADOR';
 				$ciudades = Utils::get_ciudades();
 			}
 ?>
  <link href="<?=base_url?>assets/css/style.css" rel="stylesheet">
 <div class="Titulos">
-    <p class="text-center" id="titulo-usuario">Nuevo Trabajador</p>
+    <p class="text-center" id="titulo-usuario">Agregar trabajador</p>
 </div>
 <section class="form-register pantalla-princ" id="registroUser">
 		
@@ -25,40 +24,40 @@
 		<?php  Utils::deleteSession('register'); ?>
 		<form action="<?=$url_action;?>" method="POST" class="container-fluid row pt-5">
 						<p></p>
-			<div class="col-lg-4  col-md-6 col-xs-12">
-        <div class="form-floating mb-3">
-        	<input type="text" class="form-control" name="rut_trabajador" id="rut_registro" placeholder="12222333-1" aria-describedby="validationServer03Feedback" maxlength="10" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->rut : ''?>" required>
-          <div id="validationServer03Feedback" class="invalid-feedback">
-              * Ingreso obligatorio
-          </div>
-          <label for="inputPassword6">Rut</label>
-        </div>      
+		    <div class="col-lg-4  col-md-6 col-xs-12">
+		        <div class="form-floating mb-3">
+					<input type="text" class="form-control" name="rut_trabajador" id="rut_registro" placeholder="12222333-1" aria-describedby="validationServer03Feedback" maxlength="10" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->rut : ''?>" required>
+		            <div id="validationServer03Feedback" class="invalid-feedback">
+                            * Ingreso obligatorio
+                    </div>
+                        <label for="inputPassword6">Rut</label>
+                </div>      
 			</div>
 			<div class="col-lg-4 col-md-6 col-xs-12">
 				<div class="form-floating mb-3">
-            <input type="text" class="form-control" name="nombre_trabajador" id="validationnombre" placeholder="N" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->nombre : ''?>" required>
-            <div id="validationServer03Feedback" class="invalid-feedback">
-              * Ingreso obligatorio
-            </div>
+                    <input type="text" class="form-control" name="nombre_trabajador" id="validationnombre" placeholder="N" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->nombre : ''?>" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            * Ingreso obligatorio
+                        </div>
 						<label for="nombre">Nombre</label>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-xs-12">
 				<div class="form-floating mb-3">
-          <input type="text" class="form-control" name="apellido_trabajador" id="validationapllido" placeholder="A" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->apellido : ''?>" required>
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
-          </div>
+                    <input type="text" class="form-control" name="apellido_trabajador" id="validationapllido" placeholder="A" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->apellido : ''?>" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            * Ingreso obligatorio
+                        </div>
 					<label for="apellido">Apellido</label>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-xs-12">
 				<div class="form-floating mb-3">
-          <input type="email" class="form-control" name="email_trabajador" id="validatioemail" placeholder="E" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->email : ''?>" required>
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
-          </div>
-          <label for="apellido">Email</label>
+                    <input type="email" class="form-control" name="email_trabajador" id="validatioemail" placeholder="E" aria-describedby="validationServer03Feedback" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->email : ''?>" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            * Ingreso obligatorio
+                        </div>
+                    <label for="apellido">Email</label>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-xs-12">

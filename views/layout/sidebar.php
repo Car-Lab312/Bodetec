@@ -29,9 +29,9 @@
           <li>
             <!--   ENTREGA DE CARGO  -->
             <span class="input-group-text BotonBarra" title="Entrega de cargo">
-            <a href="<?=base_url?>entregacargo/menu_tabs" class="titulo">Entrega de cargo</a>
+            <a href="<?=base_url?>entregacargo/menu_tabs" class="titulo">Entrega de pedido</a>
             <a href="<?=base_url?>entregacargo/menu_tabs">
-            <i class='bx bx-notepad iconos'></i></a>
+            <i class='bx bxs-calendar iconos'></i></a>
             </span>
           </li>
           <li>
@@ -39,7 +39,7 @@
             <span class="input-group-text BotonBarra" title="Producto">
             <a href="<?=base_url?>producto/menu_tabs" class="titulo">Productos</a>
             <a href="<?=base_url?>producto/menu_tabs">
-            <i class='bx bx-cart iconos'></i></a>
+            <i class='bx bxs-cube iconos'></i></a>
             </span>
           </li>
           <li>
@@ -47,7 +47,7 @@
             <span class="input-group-text BotonBarra" title="Stock">
             <a href="<?=base_url?>stock/menu_tabs" class="titulo">Stock</a>
             <a href="<?=base_url?>stock/menu_tabs">
-            <i class="fas fa-file-invoice-dollar fa-fw iconos"></i></a>
+            <i class="bx bxs-component iconos"></i></a>
             </span>
           </li>
           <li>
@@ -55,7 +55,7 @@
             <span class="input-group-text" title="Proveedores">
             <a href="<?=base_url?>proveedores/menu_tabs" class="titulo">Proveedores</a>
             <a href="<?=base_url?>proveedores/menu_tabs">
-            <i class='bx bx-buildings iconos'></i></a>
+            <i class='bi bi-truck iconos'></i></a>
             </span>
           </li>
           <li>

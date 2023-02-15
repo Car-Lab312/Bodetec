@@ -6,6 +6,7 @@ require_once 'models/trabajadorModel.php';
         public function cargotrabajador(){
         	require_once 'views/entregacargo/cargotrabajador.php';
             require_once 'views/entregacargo/menu_tabs.php';
+            require_once 'views/entregacargo/Pag1_buscar.php';
         }
         public function listadecargo(){
             $pedidos = new entregacargoModel();
@@ -38,6 +39,9 @@ require_once 'models/trabajadorModel.php';
         }
         public function menu_tabs(){
             require_once 'views/entregacargo/menu_tabs.php';
+        }
+        public function Pag1_buscar(){
+            require_once 'views/entregacargo/Pag1_buscar.php';
         }
         public function ver(){
             if(isset($_GET['id'])){      

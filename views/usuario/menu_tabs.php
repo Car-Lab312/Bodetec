@@ -7,10 +7,5 @@
   <li class="nav-item">
     <a class="nav-link" id="ListarUsuario" aria-current="page" href="<?=base_url?>usuario/lista"><i class="fas fa-clipboard-list fa-fw"></i>Lista de usuarios</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="BuscarUsuario" aria-current="page" href="<?=base_url?>usuario/buscar"><i class="fas fa-search fa-fw"></i>Buscar usuarios</a>
-  </li>
 </ul>
-
-<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">
     

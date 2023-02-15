@@ -13,10 +13,6 @@ require_once 'models/productoModel.php';
             require_once 'views/producto/lista.php';
             require_once 'views/producto/menu_tabs.php';
         }
-        public function buscar(){
-        	require_once 'views/producto/buscar.php';
-            require_once 'views/producto/menu_tabs.php';
-        }
         public function familia(){
             require_once 'views/producto/familia.php';
             require_once 'views/producto/menu_tabs.php';

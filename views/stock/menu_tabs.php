@@ -5,16 +5,11 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>stock/nuevo"><i class="fas fa-plus fa-fw"></i>Agregar Stock</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/cantidad"><i class="far fa-calendar-alt fa-fw"></i>Stock valorizado</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/valor"><i class="fas fa-hand-holding-usd fa-fw"></i>Stock</a>
+    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/cantidad"><i class='bx bxs-calendar'></i>Stock por fecha</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="<?=base_url?>stock/cierre"><i class="fas fa-clipboard-list fa-fw"></i>Cierre</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>stock/fecha"><i class='bx bxs-calendar'></i>Stock por fecha</a>
   </li>
 </ul>
-<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

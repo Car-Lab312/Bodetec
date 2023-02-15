@@ -11,10 +11,6 @@ require_once 'models/proveedoresModel.php';
         	require_once 'views/proveedores/lista.php';
             require_once 'views/proveedores/menu_tabs.php';
         }
-        public function buscar(){
-        	require_once 'views/proveedores/buscar.php';
-            require_once 'views/proveedores/menu_tabs.php';
-        }
         public function menu_tabs(){
             require_once 'views/proveedores/menu_tabs.php';
         }

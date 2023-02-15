@@ -25,12 +25,12 @@
 		</div>
 		<div class="col-6">
 			<div class="box prov">
-				<a href="<?=base_url?>proveedores/nuevo"><i class='bx bx-buildings xg' ></i>Proveedores</a>
+				<a href="<?=base_url?>proveedores/nuevo"><i class='bx bxs-truck'></i>Proveedores</a>
 			</div>
 		</div>
 		<div class="col-6">
 			<div class="box user">
-				<a href="<?=base_url?>usuario/nuevo"><i class='bx bxs-user-rectangle' ></i></i>Usuarios</a>
+				<a href="<?=base_url?>usuario/nuevo"><i class='bx bxs-user-rectangle' ></i>Usuarios</a>
 			</div>
 		</div>
 	</div>

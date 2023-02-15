@@ -13,11 +13,11 @@ require_once 'models/trabajadorModel.php';
 			require_once 'views/trabajador/lista.php';
 			require_once 'views/trabajador/menu_tabs.php';
 		}
-		public function buscar(){
-			Utils::isAdmin();
-			require_once 'views/trabajador/buscar.php';
-			require_once 'views/trabajador/menu_tabs.php';
-		}
+		// public function buscar(){
+		// 	Utils::isAdmin();
+		// 	require_once 'views/trabajador/buscar.php';
+		// 	require_once 'views/trabajador/menu_tabs.php';
+		// }
 		public function nuevocargo(){
 			require_once 'views/trabajador/nuevocargo.php';
 			require_once 'views/trabajador/menu_tabs.php';

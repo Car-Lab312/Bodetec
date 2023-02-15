@@ -8,10 +8,7 @@
     <a class="nav-link" aria-current="page" href="<?=base_url?>trabajador/lista"><i class="fas fa-clipboard-list fa-fw"></i>Lista de Trabajadores</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>trabajador/buscar"><i class="fas fa-search fa-fw"></i>Buscar Trabajador</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>trabajador/nuevocargo"><i class='bx bx-wrench'></i>Ingresar nuevos cargos</a>
+    <a class="nav-link" aria-current="page" href="<?=base_url?>trabajador/nuevocargo"><i class='bx bx-paper-plane'></i>Ingresar nuevos cargos</a>
   </li>
 </ul>
 <img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

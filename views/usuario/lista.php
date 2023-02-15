@@ -4,19 +4,27 @@
     <p class="text-center" id="titulo-usuario">Listar Usuario</p>
 </div>
 <section class="pantalla-princ form-register">
-	<form action="" class="container-fluid row">
-		<table class="table table-striped table-hover mt-5">
+<div class="search">
+      <div class="col-md-6 col-xs-12 row">
+        <div class="col-auto">
+          <input type="text" name="busqueda" class="form-control" id="rut" placeholder="11.222.333-4" required>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary mb-3" type="submit"><i class='bx bx-search-alt-2'></i> Buscar</button>
+        </div>
+        </div>
+      </div>
+		<table class="table table-striped table-hover pt-5 tabla rounded-top">
       <thead class="estilo-tabla">
         <tr>
            <th>Rut</th>
            <th>Nombre</th>
            <th>Apellido</th>
            <th>Direccion</th>
-           <th>Telefono</th>
+           <th>Ciudad</th>
            <th>Email</th>
-           <th>Estado</th>
-           <th>Tipo de usuario</th>
-           <th>Trabajador</th>
+           <th>Teléfono</th>
+           <th>Cargo</th>
            <th colspan="2" class="text-center">Opciones</th>
         </tr>
       </thead>

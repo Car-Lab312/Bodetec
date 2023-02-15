@@ -2,58 +2,24 @@
     <p class="text-center" id="titulo-usuario">Cantidad Productos</p>
 </div>
 <section class="pantalla-princ form-register">
-    <form action="" class="container-fluid row">
-      <div class="container-fluid">
+<div class="search">
+		  <div class="col-md-6 col-xs-12 row">
         <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="input-group input-group-lg" style="width: 350px;">
-            <span class="input-group-text" id="inputGroup-sizing-lg"><i class='bx bx-barcode-reader'></i></span>
-            <input type="text" class="form-control" name="codigo_in" id="validationcodigo" placeholder="Codigo producto" aria-describedby="validationServer03Feedback" required value="<?=isset($producto) && is_object($producto) ? $producto->cod_producto : ''?>"> 
-            <div id="validationServer03Feedback" class="invalid-feedback">
-              * Ingreso obligatorio
-            </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Fecha inicio</span>
+            <input type="date" class="form-control" name="codigo_in" id="codigo_producto" placeholder="Codigo producto" aria-describedby="validationServer03Feedback" required> 
           </div>
         </div>
-      </div>
-      <p></p>
-      <div class="col-lg-4 col-md-6 col-xs-12" style="width: 350px">
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" name="cantidad_in" id="validationcantidad" placeholder="CP" aria-describedby="validationServer03Feedback" required> 
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Fecha Final</span>
+            <input type="date" class="form-control" name="codigo_in" id="codigo_producto" placeholder="Codigo producto" aria-describedby="validationServer03Feedback" required> 
           </div>
-          <label for="nombre">Cantidad</label>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-xs-12" style="width: 350px">
-        <div class="form-floating mb-3">
-          <input type="tel" class="form-control" name="nombre_in" id="validationnombre" value="Solo se muestra y confirma dato"placeholder="CP" aria-describedby="validationServer03Feedback" required disabled> 
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
-          </div>
-          <label for="nombre">Nombre producto</label>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-xs-12" style="width: 350px" disable>
-        <div class="form-floating mb-3">
-          <input type="tel" class="form-control" name="descripcion_in" id="validationdescripcion" value="Solo se muestra y confirma dato" placeholder="CP" aria-describedby="validationServer03Feedback" required disabled> 
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
-          </div>
-          <label for="nombre">Descripcion</label>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-xs-12" style="width: 350px" disable>
-        <div class="form-floating mb-3">
-          <input type="tel" class="form-control" name="familia_in" id="validationfamilia" value="Solo se muestra y confirma dato" placeholder="CP" aria-describedby="validationServer03Feedback" required disabled> 
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            * Ingreso obligatorio
-          </div>
-          <label for="nombre">Familia</label>
-        </div>
-      </div>
-      <div class="col-12 mt-3" align="right">
-        <button class="w-60 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i>&nbsp;&nbsp;Guardar</button>
-      </div>
+			  <div class="col-auto">
+			  	<button class="btn btn-primary mb-3"><i class='bx bx-search-alt-2'></i> Buscar</button>
+	      </div>
+	    </div>
       <p></p>
       <hr>
       <table class="table table-striped table-hover">
@@ -64,7 +30,6 @@
            <th>Familia</th>
            <th>Stock</th>
            <th>Valor</th>
-           <th>Total</th>
          </tr>
         </thead>
         <tbody>
@@ -76,15 +41,8 @@
               <td><?=$producto->familia?></td>
               <td><?=$producto->stock?></td>
               <td><?=$producto->valor?></td>
-              <td><?=$producto->total?></td>
-              <?php $totalFinal = $totalFinal +(intval($producto->total)); ?>
             </tr>
           <?php endwhile; ?>
-          <tr>
-            <td colspan="4"></td>
-            <td>TOTAL</td>
-            <td><?=$totalFinal?></td>
-          </tr>
         </tbody>
       </table>
       <nav aria-label="...">

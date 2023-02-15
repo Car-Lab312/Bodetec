@@ -192,6 +192,14 @@ body{
 	border-bottom: 2px solid #333;
 } */
 
+.imprimir{
+	position: fixed;
+	left: 1400px;
+	top: 350px;
+	margin-right: 80px;
+	font-size: 20px;
+}
+
 /*----------  Edit bootstrap styles  ----------*/
 .form-control[readonly]{
 	background-color: transparent;
@@ -304,6 +312,22 @@ table form{
 	color: white;
 	background-color: #2d1f83;
 }
+
+.mensaje{
+	font-family: 'Poppins', sans-serif;
+}
+
+.bi-question-circle{
+	font-size: 60px;
+	/* color: bg-danger; */
+}
+
+.volver{
+	position: fixed;
+	right: 50px;
+	top: 800px;
+}
+
 .MPrincipal{
 	border-radius: 20px;
 	margin-left: 750px;
@@ -321,7 +345,7 @@ table form{
 	text-align: center;
 	left: 700px;
 	position: relative;
-	top: 25px;
+	top: -45px;
 	height: 60px;
 	width: 350px;
 	font-size: 30px;
@@ -713,7 +737,7 @@ table form{
 
 /*   -------------   Iconos  menu principal----------------- */
 
-.box .bxs-user-rectangle,.bx-hard-hat,.xg{
+.box .bxs-user-rectangle,.bx-hard-hat,.xg,.bxs-truck{
 	font-size: 90px;
 }
 .box{

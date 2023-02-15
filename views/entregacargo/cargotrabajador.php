@@ -4,46 +4,22 @@
 <div class="Titulos">
     <p class="text-center" id="titulo-usuario">Entregar a Trabajador</p>
 </div>
-<section class="pantalla-princ form-register row">
-    <div class="col-md-3 col-xs-12 border border-opacity-10 p-5">
-        <div class="form-floating mb-3">
-                <input type="text" autocomplete="off" id="trabajador_input" name="trabajador_registro" class="form-control mb3 trinp">
-                <label for="ciudad">Rut, nombre o email</label>
-        </div>
-    </div>
-    <div class="col-md-9 col-xs-12 border border-opacity-10 p-5">
-        <table class="table table-striped table-hover" id="tablaTrabajador">
-            <thead class="estilo-tabla">
-                <tr>
-                    <th>Rut</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Opcion</th>
-                </tr>
-            </thead>
-            <tbody>
-            
-            </tbody>
-        </table>
-        <nav aria-label="...">
-          <ul class="pagination Tabla-list-bus">
-            <li class="page-item disabled">
-              <a class="page-link">Previous</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">1</a></li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
-    </div>
-    <form action="<?=base_url?>entregacargo/save" method="POST">
+<section class="pantalla-princ form-register ">
+<ul class="nav nav-tabs ">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page">Buscar trabajador</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link btn btn-primary" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link btn btn-primary" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link btn btn-primary">Disabled</a>
+  </li>
+</ul>
+    <!-- <form action="<?=base_url?>entregacargo/save" method="POST">
         <div class="col-12 mt-3 p-3 border d-flex row">
             <div class="col-3">
                 <input type="hidden" name="id_trab" id="id_trab" value="<?=isset($trabajador) && is_object($trabajador) ? $trabajador->id_user : ''?>">
@@ -94,29 +70,29 @@
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-question"><i class='bx bx-save me-2'></i>Guardar</button>
             </div>
         </div>
-    <!-- Modal consulta-->
-    <div class="modal fade" id="mi-question" tabindex="-1" aria-hidden="true" aria-labelledby="mi-question">
+      <!-- Modal consulta-->
+      <!-- <div class="modal fade" id="mi-question" tabindex="-1" aria-hidden="true" aria-labelledby="mi-question"> -->
         <!-- Caja de dialogo -->
-        <div class="modal-dialog">
+        <!-- <div class="modal-dialog"> -->
         <!-- Contenido -->  
-            <div class="modal-content">
-                <div class="modal-header bg-light">
-                    <h5 class="modal-title">Confirmacion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <h2 class="pt-3 pb-3"><i class='bx bx-message-rounded-error me-2' ></i>La informacion se guardará en la base de datos</h4>
-                </div>
-                <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                    <input type="submit" class="btn btn-primary" value="Aceptar">
+            <!-- <div class="modal-content"> -->
+                <!-- <div class="modal-header bg-light"> -->
+                    <!-- <h5 class="modal-title">Confirmacion</h5> -->
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button> -->
+                <!-- </div> -->
+                <!-- <div class="modal-body"> -->
+                    <!-- <h2 class="pt-3 pb-3"><i class='bx bx-message-rounded-error me-2' ></i>La informacion se guardará en la base de datos</h4> -->
+                <!-- </div> -->
+                <!-- <div class="modal-footer bg-light"> -->
+                    <!-- <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button> -->
+                    <!-- <input type="submit" class="btn btn-primary" value="Aceptar"> -->
                     
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin modal consulta -->
-    </form>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+     <!-- </div> -->
+     <!-- Fin modal consulta -->
+    <!-- </form>  -->
 
 </section>
 

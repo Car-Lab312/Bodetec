@@ -7,8 +7,4 @@
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="<?=base_url?>proveedores/lista"><i class="fas fa-clipboard-list fa-fw"></i>Lista de Proveedores</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="<?=base_url?>proveedores/buscar"><i class="fas fa-search fa-fw"></i>Buscar Proveedor</a>
-  </li>
 </ul>
-<img class="fondo-menu-tabs" src="<?=base_url?>assets/images/logo.png">

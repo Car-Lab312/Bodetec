@@ -3,6 +3,18 @@
     <p class="text-center" id="titulo-usuario">Lista de Trabajador</p>
 </div>
   <section class="pantalla-princ form-register">
+  <div class="search">
+			<div class="col-md-6 col-xs-12 row">
+				<div class="col-auto">
+					<input type="text" class="form-control" id="buscaRut" placeholder="Rut, nombre, apellido o email" required>
+				</div>
+				<div class="col-auto">
+					<button class="btn btn-primary mb-3"><i class='bx bx-search-alt-2'></i>Buscar</button>
+				</div>
+	    	</div>
+	    </div>
+	    <p></p>
+			<p></p>
 			<table class="table table-striped table-hover tabla">
         <thead class="estilo-tabla">
          <tr>

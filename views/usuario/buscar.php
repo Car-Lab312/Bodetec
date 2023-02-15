@@ -8,8 +8,8 @@
     <p class="text-center" id="titulo-usuario">Buscar Usuario</p>
 </div>
   <section class="pantalla-princ form-register">
+    <form action="<?=base_url?>usuario/buscar" method="POST">
     <div class="search">
-      <form action="<?=base_url?>usuario/buscar" method="POST">
       <div class="col-md-6 col-xs-12 row">
         <div class="col-auto">
           <input type="text" name="busqueda" class="form-control" id="rut" placeholder="11.222.333-4" required>
@@ -18,8 +18,8 @@
           <button class="btn btn-primary mb-3" type="submit"><i class='bx bx-search-alt-2'></i> Buscar</button>
         </div>
         </div>
-      </form>
       </div>
+    </form>
       <p></p>
       <p></p>
       <table class="table table-striped table-hover">
