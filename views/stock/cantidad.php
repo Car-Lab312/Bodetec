@@ -25,6 +25,7 @@
       <table class="table table-striped table-hover">
         <thead class="estilo-tabla">
          <tr>
+           <th>Fecha actualizada</th>
            <th>Codigo</th>
            <th>Nombre</th>
            <th>Familia</th>
@@ -36,6 +37,7 @@
           <?php $totalFinal=0;?>
           <?php while($producto = $stock->fetch_object()):?>
             <tr>
+              <td></td>
               <td><?=$producto->cod_producto?></td>
               <td><?=$producto->nombre?></td>
               <td><?=$producto->familia?></td>

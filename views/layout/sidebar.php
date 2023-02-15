@@ -69,9 +69,9 @@
           <li>
             <!--   SALIR  -->
             <span class="input-group-text salida" title="Salir">
-            <a href="#" class="titulo">Salir</a>
-            <a href="#">
-            <i class='bx bx-exit bx-flip-horizontal iconos-salida' ></i></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Cerrar_sesion" class="titulo">Salir</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#Cerrar_sesion">
+            <i class='bx bx-exit bx-flip-horizontal iconos-salida' data-bs-toggle="modal" data-bs-target="#Cerrar_sesion"></i></a>
             </span>
           </li>
         </ul>
@@ -79,3 +79,16 @@
   </div>
 </div>
 </section>
+<!-- Modal consulta-->
+<div class="modal fade" id="Cerrar_sesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <i class="text-center bi bi-door-open text-danger"></i>
+    <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Esta seguro de cerrar sesion?</label> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+      </div>
+    </div>
+  </div>
+</div>

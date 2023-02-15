@@ -33,29 +33,18 @@
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<!-- solo mostrar informacion y no modificar -->
-				<label for="cargo" class="form-label">cargo</label>
-				<select name="cargo_log" id="cargo" class="form-control">
-						<?php while ($cargo = $cargos->fetch_object()):?>
-							<option value="<?=$cargo->id_cargo?>"<?=isset($user) && is_object($user) && $ciudad->id_ciudad == $user->cargo_id ? 'selected' : '' ?>><?=$cargo->nombre;?></option>
-						<?php endwhile; ?>
-					</select>
+				<label for="cargo" class="form-label">Cargo</label>
+				<input type="text" class="form-control" id="cargo" name="fono_log" value="Soporte informático" required disabled>
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<!-- solo mostrar informacion y no modificar -->
 				<label for="estado" class="form-label">Estado</label>
-				<select name="estado_log" id="estado" class="form-control">
-							<option value="0" <?=isset($user) && is_object($user) && $user->estado == 0  ? 'selected' : '' ?>>Deshabilitado</option>
-							<option value="1" <?=isset($user) && is_object($user) && $user->estado == 1  ? 'selected' : '' ?>>Habilitado</option>
-					</select>
+				<input type="text" class="form-control" id="estado" name="fono_log" value="Deshabilitado" required disabled>
 			</div>
 			<div class="col-md-6 col-xs-12">
 				<!-- solo mostrar informacion y no modificar -->
 				<label for="tipo" class="form-label">Tipo usuario</label>
-				<select name="tipo_log" id="tipo" class="form-control">
-						<?php while ($tipos = $tipo->fetch_object()):?>
-							<option value="<?=$tipos->id_tipo?>"<?=isset($user) && is_object($user) && $tipos->id_tipo == $user->id_tipo ? 'selected' : '' ?>><?=$tipos->descripcion;?></option>
-						<?php endwhile; ?>
-				</select>
+				<input type="text" class="form-control" id="tip_usuario" name="fono_log" value="none" required disabled>
 			</div>
 			<div class="col-12 mt-3" align="right">
 			<button class="w-60 btn btn-lg btn-primary" type="submit" name="actualizar" id="actualizar"><i class='bx bx-revision'></i>Actualizar perfil</button>

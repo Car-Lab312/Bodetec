@@ -64,6 +64,7 @@ body{
 	height: 720px;
 	box-shadow: 1px 1px 1px 1px;
 }
+
 .pantalla-princ-tab{
 	margin-left: 30px;
 	margin-right: 30px;
@@ -282,6 +283,9 @@ table form{
 .estilo-tabla{
 	background-color: #2d1f83;
 }
+.estilo-tabla-notificaciones{
+	background-color: #2d1f83;
+}
 .tabla{
 	background-color: white;
 }
@@ -317,7 +321,7 @@ table form{
 	font-family: 'Poppins', sans-serif;
 }
 
-.bi-question-circle{
+.bi-question-circle,.bi-door-open{
 	font-size: 60px;
 	/* color: bg-danger; */
 }

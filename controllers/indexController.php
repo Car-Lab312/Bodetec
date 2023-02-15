@@ -20,9 +20,7 @@ class indexController{
 			// require_once "views/admin/fondo.php";
 
 		}
-
-		
-
+	
 	}
 
 }

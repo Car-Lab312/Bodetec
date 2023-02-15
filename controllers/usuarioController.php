@@ -97,14 +97,9 @@ require_once 'models/usuarioModel.php';
     	public function menu_tabs(){
     		require_once 'views/usuario/menu_tabs.php';
     	}
-/*    	public function usuario(){
-    		require_once 'views/usuario/usuario.php';
-    	}
-    	public function lista(){
-    		require_once 'views/usuario/lista.php';
-    	}*/
-
-
+		public function notificaciones(){
+			require_once 'views/usuario/notificaciones.php';
+		}
     	public function nuevo(){
     		Utils::isAdmin();
     		require_once 'views/usuario/nuevo.php';
