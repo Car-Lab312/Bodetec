@@ -39,7 +39,7 @@
             <!--<td><?=$job->fono?></td>-->
             <td><?=$job->cargo?></td>
             <td class="text-center"><a href="<?=base_url?>trabajador/editar&id=<?=$job->id_user?>" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
-            <td class="text-center"><a href="<?=base_url?>trabajador/delete&id=<?=$job->id_user?>" class="btn btn-xss btn-danger"><i class='bx bx-minus-circle'></i></a></td>
+            <td class="text-center"><a data-bs-toggle="modal" data-bs-target="#Eliminar" class="btn btn-xss btn-danger"><i class='bx bx-minus-circle'></i></a></td>
           </tr>
           <?php endwhile; ?>
         </tbody>
@@ -61,4 +61,17 @@
         </li>
       </ul>
     </nav>
+                <!-- Modal consulta-->
+  <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <i class="text-center bi bi-question-circle text-danger"></i>
+      <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Seguro que desea eliminar el trabajador?</label> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+      </div>
+    </div>
+  </div>
+</div>
 	</section>
