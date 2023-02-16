@@ -33,8 +33,10 @@
               <td><?=$prov->city;?></td>
               <td><?=$prov->email;?></td>
               <td><?=$prov->telefono;?></td>
-              <td><a href="<?=base_url?>proveedores/editar&id=<?=$prov->id?>" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
-              <td><a data-id="<?=$prov->id?>" class="btn btn-xss btn-danger del" id="question" data-bs-toggle="modal" data-bs-target="#Eliminar"><i class='bx bx-minus-circle'></i></a></td>
+              <!-- <td><a href="<?=base_url?>proveedores/editar&id=<?=$prov->id?>" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td> -->
+              <!-- <td><a data-id="<?=$prov->id?>" class="btn btn-xss btn-danger del" id="question" data-bs-toggle="modal" data-bs-target="#Eliminar"><i class='bx bx-minus-circle'></i></a></td> -->
+              <td><a class="btn btn-xss btn-primary" id="question" data-bs-toggle="modal" data-bs-target="#Editar_prod"><i class='bx bxs-pencil'></i></a></td>
+              <td><a class="btn btn-xss btn-danger del" id="question" data-bs-toggle="modal" data-bs-target="#Eliminar"><i class='bx bx-minus-circle'></i></a></td>
             </tr>
           <?php endwhile; ?>
         </tbody>
@@ -56,6 +58,7 @@
         </li>
       </ul>
     </nav>
+    
             <!-- Modal consulta-->
   <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -69,4 +72,68 @@
     </div>
   </div>
 </div>
-  </section>
+  <div class="modal fade" id="Editar_prod" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Editar proveedor</h5>
+      <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+    </div>
+    <div class="modal-body" Style="margin-left: 10px">
+      <div class="row mt-3">
+        <div class="col-3">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Rut</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Nombre</label>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Direccion</label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-5">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Region</label>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Ciudad</label>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Email</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group form-floating res">
+            <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+            <label for="nombreProd">Telefono</label>
+          </div>
+        </div>
+      </div>
+      </div> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i> Cancelar</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

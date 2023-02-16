@@ -34,7 +34,8 @@
           <th></th> <!-- Cambiar nombre a Descripcion -->
           <td><?=$producto->descripcion;?></td> <!-- Cambiar nombre a sub familia -->
           <td>$ <?=$producto->valor;?></td>
-          <td class="text-center"><a href="<?=base_url?>ventanas/modalEditarproduc.php" data-bs-toggle="modal" data-bs-target="#Editar" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
+          <!-- <td class="text-center"><a href="<?=base_url?>ventanas/modalEditarproduc.php" data-bs-toggle="modal" data-bs-target="#Editar" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td> -->
+          <td class="text-center"><a data-bs-toggle="modal" data-bs-target="#Editar_producto" class="btn btn-xss btn-primary"><i class='bx bxs-pencil'></i></a></td>
           <td class="text-center"><a data-bs-toggle="modal" data-bs-target="#Eliminar" class="btn btn-xss btn-danger"><i class='bx bx-minus-circle'></i></a></td>
         </tr>
         <?php endwhile; ?>
@@ -60,7 +61,7 @@
 	</section>
 
   <!-- Modales productos - CONFIRMAR ELIMINAR -->
-  <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <i class="text-center bi bi-question-circle text-danger"></i>
@@ -68,6 +69,71 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
         <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Editar_producto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar Producto</h5>
+        <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+      </div>
+      <div class="modal-body" Style="margin-left: 10px">
+        <div class="row mt-3">
+          <div class="col-5">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class='bx bx-barcode-reader'></i></span>
+              <input type="text" class="form-control" name="codigo_in" id="codigo_producto" placeholder="Codigo producto" aria-describedby="validationServer03Feedback" required> 
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="form-group form-floating res">
+              <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Nombres producto</label>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="form-group form-floating res">
+              <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Descripcion</label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group form-floating res">
+              <input type="number" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Valor</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="form-group form-floating res">
+              <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Proveedor</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group form-floating res">
+              <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Familia</label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group form-floating res">
+              <input type="text" class="form-floating form-control" id="producto_in_scan" > 
+              <label for="nombreProd">Sub Familia</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i> Cancelar</button>
+          <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i> Editar</button>
+        </div>
       </div>
     </div>
   </div>
