@@ -118,28 +118,19 @@
 				<button class="w-60 btn btn-lg btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#mi-question" name="add" id="add"><i class='bx bx-edit'></i>&nbsp;&nbsp;Ingresar</button>
 			</div>
 			<!-- Modal consulta-->
-				<div class="modal fade" id="mi-question" tabindex="-1" aria-hidden="true" aria-labelledby="mi-question">
-						<!-- Caja de dialogo -->
-						<div class="modal-dialog">
-						<!-- Contenido -->	
-							<div class="modal-content">
-								<div class="modal-header bg-warning">
-									<h5 class="modal-title">Confirmacion</h5>
-									<button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
-								</div>
-								<div class="modal-body">
-									<h4 class="pt-3 pb-3">La informacion se Guardará en la base de datos</h4>
-								</div>
-								<div class="modal-footer bg-warning">
-									<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-									<input type="submit" class="btn btn-primary" value="Aceptar">
-									
-								</div>
-							</div>
-						</div>
+				<div class="modal fade" id="mi-question" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <i class="text-center bi bi-people-fill iconos text-danger"></i>
+                      <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Desea confirmar ingreso trabajador?</label> 
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+                          <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
 				</div>
 			<!-- Fin modal consulta -->
 		</form>
 </section>
-
-

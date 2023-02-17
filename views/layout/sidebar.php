@@ -22,8 +22,7 @@
             <span class="input-group-text BotonBarra" title="Trabajador">
             <a href="<?=base_url?>trabajador/menu_tabs" class="titulo">Trabajador</a>
             <a href="<?=base_url?>trabajador/menu_tabs">
-            <i class="fas fa-users fa-fw iconos"></i>
-            </a>
+            <i class="bi bi-people-fill iconos"></i></a>
             </span>
           </li>
           <li>
@@ -39,7 +38,7 @@
             <span class="input-group-text BotonBarra" title="Producto">
             <a href="<?=base_url?>producto/menu_tabs" class="titulo">Productos</a>
             <a href="<?=base_url?>producto/menu_tabs">
-            <i class='bx bxs-cube iconos'></i></a>
+            <i class='bx bx-package iconos'></i></a>
             </span>
           </li>
           <li>
@@ -80,7 +79,7 @@
 </div>
 </section>
 <!-- Modal consulta-->
-<div class="modal fade" id="Cerrar_sesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Cerrar_sesion" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <i class="text-center bi bi-door-open text-danger"></i>

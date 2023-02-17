@@ -96,23 +96,17 @@
         <button class="w-60 btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#q-prov" name="add" id="add"><i class='bx bx-save me-2'></i>Guardar</button>
       </div>
       <!-- Modal consulta-->
-        <div class="modal fade" id="q-prov" tabindex="-1" aria-hidden="true" aria-labelledby="q-prov">
-            <!-- Caja de dialogo -->
-            <div class="modal-dialog">
-            <!-- Contenido -->  
-              <div class="modal-content">
-                <div class="modal-header bg-warning">
-                  <h5 class="modal-title">Confirmacion</h5>
-                  <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+        <div class="modal fade" id="q-prov" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <i class="text-center bi bi-truck text-danger"></i>
+                    <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Desea confirmar ingreso de proveedor?</label> 
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+                      <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  <h4 class="pt-3 pb-3">Se guardará el proveedor en la base de datos</h4>
-                </div>
-                <div class="modal-footer bg-warning">
-                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-                  <input type="submit" class="btn btn-primary" value="Aceptar"> 
-                </div>
-              </div>
             </div>
         </div>
       <!-- Fin modal consulta -->

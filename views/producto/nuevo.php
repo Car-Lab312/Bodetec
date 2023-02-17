@@ -96,10 +96,22 @@
 			<p></p>
 			<div class="col-12 mt-3">
 				<!-- <button class="w-60 btn btn-lg btn-primary" type="submit" name="consultar" id="consultar">Consultar</button> -->
-				<button class="w-90 btn btn-lg btn-primary" type="submit" name="add" id="add"><i class='bx bx-edit'></i> Guardar</button>
+				<button class="w-90 btn btn-lg btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#NuevoProducto" name="add" id="add"><i class='bx bx-edit'></i> Guardar</button>
 			</div>
 			</form>
 			<?php if(!isset($producto)):?>
       <?php endif; ?>	
 		</form>
 	</section>
+	<div class="modal fade" id="NuevoProducto" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <i class="text-center bx bx-package iconos text-danger"></i>
+    <label class="text-center mensaje" Style="margin-top: 20px" for="">¿Desea confirmar ingreso producto?</label> 
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-x"></i>No</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-check"></i>Si</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -115,6 +115,14 @@ body{
 	color: white; 
 }
 
+.nav-tab .link-tab:hover{
+	color: red; 
+}
+
+.nav-tab a{
+	color: #2d1f83; 
+}
+
 .full-box{
 	width: 100%;
 	margin: 0;
@@ -321,7 +329,12 @@ table form{
 	font-family: 'Poppins', sans-serif;
 }
 
-.bi-question-circle,.bi-door-open{
+.bi-question-circle,.bi-door-open,.bi-hdd,.bi-person-add,.bi-truck{
+	font-size: 60px;
+	/* color: bg-danger; */
+}
+
+.bxs-component,.bx-package,.bi-people-fill{
 	font-size: 60px;
 	/* color: bg-danger; */
 }
@@ -622,18 +635,6 @@ table form{
 .tile:active{
 	outline: none;
 }
-/* .tile-tittle{
-	margin: 0;
-	width: 100%;
-	padding: 0;
-	height: 40px;
-	line-height: 40px;
-	box-sizing: border-box;
-	text-transform: uppercase;
-	border-bottom: 1px solid var(--border-color);
-	transition: all .2s ease-in-out;
-	font-family: 'roboto_medium_regular';
-} */
 .tile:hover .tile-tittle{
 	color: #FFF;
 	border-color: var(--color-three);
@@ -811,6 +812,30 @@ table form{
 }
 .form-register-user-perfil button{
 	width: 200px;
+}
+
+.datos-trabajador{
+	position: absolute;
+	/* border: 1px solid; */
+	/* border-style: solid; */
+	border-color: #000428;
+	/* border-radius: 20px; */
+	top: 280px;
+	right: 300px;
+}
+
+.botones_entrega{
+	margin-right: 80px;
+	margin-bottom: 50px;
+}
+
+.accordion{
+	position: absolute;
+	top: 280px;
+	right: 500px;
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	width: 1000px;
 }
 
 /*  ----- Fin estilo fomulario y formulario perfil ------- */

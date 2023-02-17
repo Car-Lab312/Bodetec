@@ -61,7 +61,7 @@
 	</section>
 
   <!-- Modales productos - CONFIRMAR ELIMINAR -->
-<div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Eliminar" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <i class="text-center bi bi-question-circle text-danger"></i>
@@ -74,7 +74,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="Editar_producto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Editar_producto" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
